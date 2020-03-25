@@ -10,7 +10,11 @@ export default class Header extends React.Component {
         <span>Education</span>
         <span>Skills</span>
         <span>
-          <a href="mailto:xavierstampslafont@gmail.com" target="_blank">
+          <a
+            href="mailto:xavierstampslafont@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <IoMdMail />
           </a>
         </span>
@@ -18,6 +22,7 @@ export default class Header extends React.Component {
           <a
             href="https://www.linkedin.com/in/xavierstampslafont/"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <IoLogoLinkedin />
           </a>
