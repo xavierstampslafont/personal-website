@@ -1,10 +1,16 @@
 .App {
-  width: 100%;
-  height: 100%;
   text-align: center;
-  background: radial-gradient(
-    ellipse at center,
-    rgb(249, 243, 239) 77%,
-    rgb(255, 240, 215) 100%
-  );
+
+  .app-background {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: radial-gradient(
+      ellipse at center,
+      rgb(249, 243, 239) 77%,
+      rgb(255, 240, 215) 100%
+    );
+  }
 }
