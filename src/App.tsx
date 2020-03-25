@@ -2,11 +2,12 @@ import React from "react";
 import "./App.scss";
 import Menu from "./components/Menu";
 import Body from "./components/Body";
+import Background from "./components/Background";
 
 function App() {
   return (
     <div className="App">
-      <div className="app-background" />
+      <Background />
       <Body />
       <Menu />
     </div>
