@@ -1,0 +1,10 @@
+.components-header {
+  position: fixed;
+  bottom: 1em;
+  width: 100%;
+  color: blue;
+
+  > * {
+    margin: 0 1em;
+  }
+}

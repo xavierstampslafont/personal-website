@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.scss";
-import Header from "./components/Header";
+import Menu from "./components/Menu";
 import Body from "./components/Body";
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <div className="app-background" />
       <Body />
-      <Header />
+      <Menu />
     </div>
   );
 }
