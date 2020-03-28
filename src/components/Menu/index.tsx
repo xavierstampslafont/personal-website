@@ -2,10 +2,10 @@ import React from "react";
 import "./style.scss";
 import { Icon } from "semantic-ui-react";
 
-export default class Header extends React.Component {
+export default class Menu extends React.Component {
   render() {
     return (
-      <div className="components-header">
+      <div className="components-menu">
         <span>Work</span>
         <span>Education</span>
         <span>Skills</span>
