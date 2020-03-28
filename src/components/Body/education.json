@@ -1,0 +1,25 @@
+{
+  "items": [
+    {
+      "header": "M.Sc. in IT, Media Technology and Games, Design",
+      "institution": "IT University of Copenhagen",
+      "location": "Copenhagen, Denmark",
+      "time": "2009-2011",
+      "points": [
+        "Thesis in designing a video game for families to play together",
+        "Conducted user research on families with children",
+        "Received equivalent of 4.0 (highest mark)"
+      ]
+    },
+    {
+      "header": "B.A., Concentrations in Music and Japanese",
+      "institution": "Colgate University",
+      "location": "Hamilton, NY, USA",
+      "time": "2004-2008",
+      "points": [
+        "Specialized in music composition for acoustic instruments",
+        "Semester abroad in Japan, studying Japanese language and culture"
+      ]
+    }
+  ]
+}
