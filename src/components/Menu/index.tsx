@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.scss";
-import { IoLogoLinkedin, IoMdMail } from "react-icons/io";
+import { Icon } from "semantic-ui-react";
 
 export default class Header extends React.Component {
   render() {
@@ -15,7 +15,8 @@ export default class Header extends React.Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <IoMdMail />
+            <Icon name="mail" />
+            xavierstampslafont@gmail.com
           </a>
         </span>
         <span>
@@ -24,7 +25,8 @@ export default class Header extends React.Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <IoLogoLinkedin />
+            <Icon name="linkedin" />
+            https://www.linkedin.com/in/xavierstampslafont/
           </a>
         </span>
       </div>
