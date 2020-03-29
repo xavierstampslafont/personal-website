@@ -1,5 +1,5 @@
 $portrait-size: 25em;
-$body-text-width: 42em;
+$body-text-width: 40em;
 
 .components-body {
   .body-table {
@@ -15,5 +15,6 @@ $body-text-width: 42em;
 
   .body-text {
     width: $body-text-width;
+    text-align: center;
   }
 }
