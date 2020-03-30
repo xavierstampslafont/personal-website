@@ -1,3 +1,13 @@
 {
-  "items": []
+  "items": [
+    {
+      "header": "Programming (years)"
+    },
+    {
+      "header": "Tools (years)"
+    },
+    {
+      "header": "Languages"
+    }
+  ]
 }

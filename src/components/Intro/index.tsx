@@ -19,12 +19,16 @@ export default class Intro extends React.Component {
                   experience.
                 </p>
                 <p>
-                  As a programmer, I specialize in clean code, TDD, and
-                  refactoring.
+                  As a programmer, my mission is to create long-term value
+                  through code.
                 </p>
                 <p>
-                  I love writing scripts and reusable code which improve
-                  development quality and speed!
+                  My main tools for achieving this are clean code, refactoring,
+                  TDD.
+                </p>
+                <p>
+                  I love writing scripts and reusable code components which
+                  improve development quality and speed!
                 </p>
                 <p>
                   I'm team oriented, with high consideration for my colleagues’

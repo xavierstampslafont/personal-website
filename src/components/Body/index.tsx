@@ -17,7 +17,7 @@ export default class Body extends React.Component {
         <Divider />
         <ListSection header="Education" data={EducationData} />
         <Divider />
-        <ListSection header="Skills" data={SkillsData} />
+        <ListSection header="Skills" data={{ items: [] }} />
       </div>
     );
   }
