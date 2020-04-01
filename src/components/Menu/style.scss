@@ -1,11 +1,15 @@
 .components-menu {
   position: fixed;
   bottom: 1em;
-  width: 100%;
-  color: blue;
+  left: 0;
+  right: 0;
   text-align: center;
 
-  > * {
+  span {
     margin: 0 1em;
+
+    a {
+      color: rgba(0, 0, 0, 0.8);
+    }
   }
 }

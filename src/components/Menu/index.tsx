@@ -1,6 +1,7 @@
 import React from "react";
 import "./style.scss";
 import { Icon, SemanticICONS } from "semantic-ui-react";
+import { Link } from "react-router-dom";
 
 export default class Menu extends React.Component {
   render() {
@@ -13,17 +14,17 @@ export default class Menu extends React.Component {
       {
         label: "Home",
         icon: "home",
-        link: "#home"
+        link: "/"
       },
       {
         label: "Bio",
         icon: "user",
-        link: "#bio"
+        link: "/bio"
       },
       {
         label: "Work",
         icon: "code",
-        link: "work"
+        link: "/work"
       },
       {
         label: "Music",
@@ -53,18 +54,28 @@ export default class Menu extends React.Component {
 
     return (
       <div className="components-menu">
-        {items.map(item => (
-          <span key={item.label}>
-            <a
-              href={item.link}
-              target={item.external ? "_blank" : "_self"}
-              rel={item.external ? "noopener noreferrer" : ""}
-            >
+        {items.map(item => {
+          const content = (
+            <React.Fragment>
               <Icon name={item.icon} />
               {item.label}
-            </a>
-          </span>
-        ))}
+            </React.Fragment>
+          );
+          return (
+            <span key={item.label}>
+              {item.external && (
+                <a
+                  href={item.link}
+                  target={"_blank"}
+                  rel={"noopener noreferrer"}
+                >
+                  {content}
+                </a>
+              )}
+              {!item.external && <Link to={item.link}>{content}</Link>}
+            </span>
+          );
+        })}
       </div>
     );
   }
