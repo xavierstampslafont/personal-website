@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.scss";
 import { Icon, SemanticICONS } from "semantic-ui-react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 interface Item {
   label: string;
@@ -64,7 +64,11 @@ export default class Menu extends React.Component {
     );
 
     if (!item.external) {
-      return <Link to={item.link}>{content}</Link>;
+      return (
+        <NavLink to={item.link} activeClassName="active" exact>
+          {content}
+        </NavLink>
+      );
     }
 
     return (

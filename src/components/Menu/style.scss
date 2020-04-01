@@ -11,5 +11,15 @@
     a {
       color: rgba(0, 0, 0, 0.8);
     }
+
+    a:hover {
+      position: relative;
+      bottom: 0.5em;
+    }
+
+    a.active {
+      position: relative;
+      bottom: 1em;
+    }
   }
 }
