@@ -3,14 +3,16 @@ import "./style.scss";
 import { Icon, SemanticICONS } from "semantic-ui-react";
 import { Link } from "react-router-dom";
 
+interface Item {
+  label: string;
+  icon: SemanticICONS;
+  link: string;
+  external?: boolean;
+}
+
 export default class Menu extends React.Component {
-  render() {
-    const items: {
-      label: string;
-      icon: SemanticICONS;
-      link: string;
-      external?: boolean;
-    }[] = [
+  getItems(): Item[] {
+    return [
       {
         label: "Home",
         icon: "home",
@@ -51,30 +53,32 @@ export default class Menu extends React.Component {
         external: true
       }
     ];
+  }
+
+  linkFactory(item: Item): JSX.Element {
+    const content = (
+      <React.Fragment>
+        <Icon name={item.icon} />
+        {item.label}
+      </React.Fragment>
+    );
+
+    if (!item.external) {
+      return <Link to={item.link}>{content}</Link>;
+    }
 
     return (
+      <a href={item.link} target={"_blank"} rel={"noopener noreferrer"}>
+        {content}
+      </a>
+    );
+  }
+
+  render() {
+    return (
       <div className="components-menu">
-        {items.map(item => {
-          const content = (
-            <React.Fragment>
-              <Icon name={item.icon} />
-              {item.label}
-            </React.Fragment>
-          );
-          return (
-            <span key={item.label}>
-              {item.external && (
-                <a
-                  href={item.link}
-                  target={"_blank"}
-                  rel={"noopener noreferrer"}
-                >
-                  {content}
-                </a>
-              )}
-              {!item.external && <Link to={item.link}>{content}</Link>}
-            </span>
-          );
+        {this.getItems().map(item => {
+          return <span key={item.label}>{this.linkFactory(item)}</span>;
         })}
       </div>
     );
