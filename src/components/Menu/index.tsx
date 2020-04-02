@@ -63,18 +63,18 @@ export default class Menu extends React.Component {
       </React.Fragment>
     );
 
-    if (!item.external) {
+    if (item.external) {
       return (
-        <NavLink to={item.link} activeClassName="active" exact>
+        <a href={item.link} target={"_blank"} rel={"noopener noreferrer"}>
           {content}
-        </NavLink>
+        </a>
       );
     }
 
     return (
-      <a href={item.link} target={"_blank"} rel={"noopener noreferrer"}>
+      <NavLink to={item.link} activeClassName="active" exact>
         {content}
-      </a>
+      </NavLink>
     );
   }
 
