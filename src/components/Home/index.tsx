@@ -14,7 +14,7 @@ export default class Intro extends React.Component {
           <b>create long-term value through code</b>.
         </p>
         <p>
-          Currently, I work at <a href="https://www.x2omedia.com/">X2O Media</a>{" "}
+          Currently I work at <a href="https://www.x2omedia.com/">X2O Media</a>,
           developing high-end collaborative software that radically improves how
           people teach, learn and meet remotely.
         </p>

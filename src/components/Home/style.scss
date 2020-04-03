@@ -1,18 +1,15 @@
-$portrait-size: 25em;
-$body-text-width: 40em;
-
 .components-home {
   .home-table {
     height: 90vh;
 
     .home-portrait {
-      width: $portrait-size;
-      height: $portrait-size;
+      width: 25em;
+      height: 25em;
       clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
     }
 
     .home-text {
-      width: $body-text-width;
+      width: 40em;
       text-align: center;
       padding: 0 2em;
     }
