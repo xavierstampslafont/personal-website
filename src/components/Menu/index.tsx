@@ -19,9 +19,9 @@ export default class Menu extends React.Component {
         link: "/"
       },
       {
-        label: "Bio",
+        label: "About",
         icon: "user",
-        link: "/bio"
+        link: "/about"
       },
       {
         label: "Work",

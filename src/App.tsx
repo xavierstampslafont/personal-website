@@ -4,7 +4,7 @@ import Menu from "./components/Menu";
 import Home from "./components/Home";
 import Background from "./components/Background";
 import { Switch, Route } from "react-router-dom";
-import Bio from "./components/Bio";
+import About from "./components/About";
 import Work from "./components/Work";
 
 function App() {
@@ -13,8 +13,8 @@ function App() {
       <Background />
       <Menu />
       <Switch>
-        <Route path="/bio">
-          <Bio />
+        <Route path="/about">
+          <About />
         </Route>
         <Route path="/work">
           <Work />
