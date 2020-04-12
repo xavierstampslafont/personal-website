@@ -5,7 +5,7 @@
       "events": [
         {
           "category": "personal",
-          "description": "Born in France, youngest of 3 children"
+          "description": "Born in France"
         }
       ]
     },
@@ -32,15 +32,24 @@
       ]
     },
     {
+      "year": 2006,
+      "events": [
+        {
+          "category": "relocation",
+          "description": "Semester abroad in Japan"
+        }
+      ]
+    },
+    {
       "year": 2008,
       "events": [
         {
           "category": "education",
-          "description": "Earned bachelor's degree in music composition and Japanese"
+          "description": "Earned bachelor's degree in music"
         },
         {
           "category": "relocation",
-          "description": "Moved to France for unplanned gap year"
+          "description": "Moved to France"
         }
       ]
     },
@@ -58,7 +67,7 @@
       "events": [
         {
           "category": "education",
-          "description": "Earned master's degree in game design and development"
+          "description": "Earned master's degree in games"
         }
       ]
     },
@@ -94,7 +103,7 @@
       "events": [
         {
           "category": "personal",
-          "description": "Became Papa to Naomi"
+          "description": "Became a father"
         }
       ]
     },

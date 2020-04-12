@@ -1,3 +1,19 @@
 .components-about {
   padding: 5em;
+
+  h1,
+  .center {
+    text-align: center;
+  }
+
+  .ui.basic.table {
+    margin-left: auto;
+    margin-right: auto;
+
+    tr {
+      td {
+        border-top: 0px;
+      }
+    }
+  }
 }
