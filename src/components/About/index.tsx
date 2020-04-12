@@ -123,7 +123,7 @@ export default class About extends React.Component {
           tableData={broadStrokes.data}
           renderBodyRow={this.yearFactory}
         />
-        <h2 className="center">In more detail...</h2>
+        <h2>In more detail...</h2>
         {this.getDetail()}
       </div>
     );
