@@ -2,9 +2,9 @@ import React from "react";
 import ExtLink from "../ExtLink";
 import "./style.scss";
 
-const Heading = (props: { text: string }) => {
+const Heading = (props: { text: string; className?: string }) => {
   return (
-    <p>
+    <p className={props.className}>
       <b>{props.text}</b>
     </p>
   );
@@ -22,24 +22,25 @@ const HeadingWithInlineContent = (props: {
 };
 
 export default class Thesis extends React.Component {
-  renderLinks(
-    linkPairs: {
+  renderDownloadLinks(
+    links: {
       text: string;
       to: string;
+      sizeInMb: string;
     }[]
   ): JSX.Element {
     return (
       <span>
-        (
-        {linkPairs.map((pair, index) => {
+        {links.map((pair, index) => {
           return (
             <span>
-              <ExtLink to={pair.to}>{pair.text}</ExtLink>
-              {index < linkPairs.length - 1 && " | "}
+              <ExtLink to={pair.to}>
+                {`${pair.text} (${pair.sizeInMb} MB)`}
+              </ExtLink>
+              {index < links.length - 1 && " | "}
             </span>
           );
         })}
-        )
       </span>
     );
   }
@@ -47,10 +48,10 @@ export default class Thesis extends React.Component {
   render() {
     return (
       <div className="components-thesis">
-        <h1>Thesis</h1>
-        <HeadingWithInlineContent
-          text="Title"
-          content="Designing a Digital Game for the Family"
+        <h1>Designing a Digital Game for the Family</h1>
+        <Heading
+          text="Master's thesis submitted to IT University of Copenhagen in 2011"
+          className="center"
         />
         <HeadingWithInlineContent
           text="Authors"
@@ -169,27 +170,30 @@ export default class Thesis extends React.Component {
         </p>
         <Heading text="Downloads" />
         <p>
-          Full thesis{" "}
-          {this.renderLinks([
+          Full thesis:{" "}
+          {this.renderDownloadLinks([
             {
               text: "PDF",
               to:
-                "https://www.dropbox.com/s/plj2q7f128g5hth/Lange-Nielsen%2C%20Cassar%2C%20%26%20Stamps-Lafont%20-%20Thesis.pdf?dl=0"
+                "https://www.dropbox.com/s/plj2q7f128g5hth/Lange-Nielsen%2C%20Cassar%2C%20%26%20Stamps-Lafont%20-%20Thesis.pdf?dl=0",
+              sizeInMb: "1"
             }
           ])}
         </p>
         <p>
-          Dungeon Maze Prototype{" "}
-          {this.renderLinks([
+          Dungeon Maze Prototype:{" "}
+          {this.renderDownloadLinks([
             {
               text: "Windows",
               to:
-                "https://www.dropbox.com/s/in1pqdhcbmalm88/Dungeon%20Maze%20%28Windows%29.zip?dl=0"
+                "https://www.dropbox.com/s/in1pqdhcbmalm88/Dungeon%20Maze%20%28Windows%29.zip?dl=0",
+              sizeInMb: "2"
             },
             {
               text: "Mac",
               to:
-                "https://www.dropbox.com/s/jl35siaf8lcj4g7/Dungeon%20Maze%20%28Mac%29.zip?dl=0"
+                "https://www.dropbox.com/s/jl35siaf8lcj4g7/Dungeon%20Maze%20%28Mac%29.zip?dl=0",
+              sizeInMb: "3"
             }
           ])}
         </p>
