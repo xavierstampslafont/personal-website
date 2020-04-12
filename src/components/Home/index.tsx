@@ -1,6 +1,9 @@
 import React from "react";
 import "./style.scss";
 import portrait from "../../images/portrait.jpg";
+import ExtLink from "../ExtLink";
+import links from "../ExtLink/links.json";
+import { Link } from "react-router-dom";
 
 export default class Intro extends React.Component {
   getText(): JSX.Element {
@@ -10,17 +13,20 @@ export default class Intro extends React.Component {
         <p>
           I'm a full stack software developer with 7 years of professional
           experience. I've worked on web-based products, SaaS software, and
-          games. As a programmer, my mission is to{" "}
-          <b>create long-term value through code</b>.
+          games. As a developer, my mission is to{" "}
+          <Link to="work">create long-term value through code</Link>.
         </p>
         <p>
-          Currently I work at <a href="https://www.x2omedia.com/">X2O Media</a>,
+          Currently I work at{" "}
+          <ExtLink to="https://www.x2omedia.com/">X2O Media</ExtLink>,
           developing high-end collaborative software that radically improves how
           people teach, learn and meet remotely.
         </p>
         <p>
-          I'm also a husband and a papa. Once upon a time, I used to make music
-          as well as draw comics. In my free time, I enjoy playing JRPGs.
+          I'm also a husband and a papa. Once upon a time,{" "}
+          <ExtLink to={links.music}>I used to make music</ExtLink> as well as{" "}
+          <ExtLink to={links.comics}>draw comics</ExtLink>. In my free time, I
+          enjoy playing JRPGs.
         </p>
         <p>⬥</p>
       </React.Fragment>

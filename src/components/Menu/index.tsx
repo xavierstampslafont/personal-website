@@ -2,6 +2,8 @@ import React from "react";
 import "./style.scss";
 import { Icon, SemanticICONS } from "semantic-ui-react";
 import { NavLink } from "react-router-dom";
+import ExtLink from "../ExtLink";
+import links from "../ExtLink/links.json";
 
 interface Item {
   label: string;
@@ -31,13 +33,13 @@ export default class Menu extends React.Component {
       {
         label: "Music",
         icon: "music",
-        link: "https://soundcloud.com/xavierstampslafont",
+        link: links.music,
         external: true
       },
       {
         label: "Comics",
         icon: "pencil",
-        link: "https://howsyouroktea.wordpress.com/",
+        link: links.comics,
         external: true
       },
       {
@@ -64,11 +66,7 @@ export default class Menu extends React.Component {
     );
 
     if (item.external) {
-      return (
-        <a href={item.link} target={"_blank"} rel={"noopener noreferrer"}>
-          {content}
-        </a>
-      );
+      return <ExtLink to={item.link}>{content}</ExtLink>;
     }
 
     return (
