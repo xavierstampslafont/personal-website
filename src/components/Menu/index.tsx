@@ -31,6 +31,11 @@ export default class Menu extends React.Component {
         link: "/work"
       },
       {
+        label: "Thesis",
+        icon: "university",
+        link: "/thesis"
+      },
+      {
         label: "Music",
         icon: "music",
         link: links.music,

@@ -23,6 +23,10 @@ export default class Intro extends React.Component {
           people teach, learn and meet remotely.
         </p>
         <p>
+          I have a master's degree in game development, and my thesis was on{" "}
+          <Link to="thesis">designing a digital game for the family</Link>.
+        </p>
+        <p>
           I'm also a husband and a papa. Once upon a time,{" "}
           <ExtLink to={links.music}>I used to make music</ExtLink> as well as{" "}
           <ExtLink to={links.comics}>draw comics</ExtLink>. In my free time, I

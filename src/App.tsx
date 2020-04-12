@@ -6,6 +6,7 @@ import Background from "./components/Background";
 import { Switch, Route } from "react-router-dom";
 import About from "./components/About";
 import Work from "./components/Work";
+import Thesis from "./components/Thesis";
 
 function App() {
   return (
@@ -18,6 +19,9 @@ function App() {
         </Route>
         <Route path="/work">
           <Work />
+        </Route>
+        <Route path="/thesis">
+          <Thesis />
         </Route>
         <Route path="/">
           <Home />
