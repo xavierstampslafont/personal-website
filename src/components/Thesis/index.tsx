@@ -33,7 +33,7 @@ export default class Thesis extends React.Component {
       <span>
         {links.map((pair, index) => {
           return (
-            <span>
+            <span key={pair.text}>
               <ExtLink to={pair.to}>
                 {`${pair.text} (${pair.sizeInMb} MB)`}
               </ExtLink>
