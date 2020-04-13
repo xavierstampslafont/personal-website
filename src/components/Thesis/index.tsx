@@ -47,7 +47,7 @@ export default class Thesis extends React.Component {
 
   render() {
     return (
-      <div className="components-thesis">
+      <div className="components-thesis components-content">
         <h1>Designing a Digital Game for the Family</h1>
         <Heading
           text="Master's thesis submitted to IT University of Copenhagen in 2011"

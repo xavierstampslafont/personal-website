@@ -1,6 +1,6 @@
-.components-about {
-  padding: 5em;
+@import "../componentStyle.scss";
 
+.components-about {
   .ui.basic.table {
     margin-left: auto;
     margin-right: auto;

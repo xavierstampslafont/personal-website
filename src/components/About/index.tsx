@@ -111,7 +111,7 @@ export default class About extends React.Component {
 
   render() {
     return (
-      <div className="components-about">
+      <div className="components-about components-content">
         <h1>About</h1>
         <p className="center">
           Here's my life in broad strokes of years and events:
