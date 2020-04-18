@@ -36,6 +36,12 @@ export default class Menu extends React.Component {
         link: "/thesis"
       },
       {
+        label: "Games",
+        icon: "game",
+        link: "https://xavierstampslafont.itch.io/",
+        external: true
+      },
+      {
         label: "Music",
         icon: "music",
         link: links.music,
