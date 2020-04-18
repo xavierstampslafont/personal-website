@@ -9,6 +9,7 @@ import Work from "./components/Work";
 import Thesis from "./components/Thesis";
 
 function App() {
+  console.warn("TODO: Thesis real sizes for downloads");
   return (
     <div className="App">
       <Background />
