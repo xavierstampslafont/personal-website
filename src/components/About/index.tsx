@@ -38,7 +38,7 @@ export default class About extends React.Component {
 
   eventFactory(event: Event): JSX.Element {
     return (
-      <p>
+      <p key={event.description}>
         <Icon name={this.getIcon(event.category)} />
         {event.description}
       </p>
@@ -47,7 +47,7 @@ export default class About extends React.Component {
 
   yearFactory(yearEvents: YearEvents): JSX.Element {
     return (
-      <Table.Row verticalAlign="top">
+      <Table.Row verticalAlign="top" key={yearEvents.year}>
         <Table.Cell content={yearEvents.year} />
         <Table.Cell>{yearEvents.events.map(this.eventFactory)}</Table.Cell>
       </Table.Row>
