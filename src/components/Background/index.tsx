@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.scss";
 
-export default function Background() {
-  return <div className="components-background" />;
-}
+export const Background = (): JSX.Element => (
+  <div className="components-background" />
+);
