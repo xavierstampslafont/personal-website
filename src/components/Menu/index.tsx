@@ -18,53 +18,48 @@ export default class Menu extends React.Component {
       {
         label: "Home",
         icon: "home",
-        link: "/"
+        link: "/",
       },
       {
         label: "About",
         icon: "user",
-        link: "/about"
-      },
-      {
-        label: "Work",
-        icon: "code",
-        link: "/work"
+        link: "/about",
       },
       {
         label: "Thesis",
         icon: "university",
-        link: "/thesis"
+        link: "/thesis",
       },
       {
         label: "Games",
         icon: "game",
         link: "https://xavierstampslafont.itch.io/",
-        external: true
+        external: true,
       },
       {
         label: "Music",
         icon: "music",
         link: links.music,
-        external: true
+        external: true,
       },
       {
         label: "Comics",
         icon: "pencil",
         link: links.comics,
-        external: true
+        external: true,
       },
       {
         label: "Email",
         icon: "mail",
         link: "mailto:xavierstampslafont@gmail.com",
-        external: true
+        external: true,
       },
       {
         label: "LinkedIn",
         icon: "linkedin",
         link: "https://www.linkedin.com/in/xavierstampslafont/",
-        external: true
-      }
+        external: true,
+      },
     ];
   }
 
@@ -90,7 +85,7 @@ export default class Menu extends React.Component {
   render() {
     return (
       <div className="components-menu">
-        {this.getItems().map(item => {
+        {this.getItems().map((item) => {
           return <span key={item.label}>{this.linkFactory(item)}</span>;
         })}
       </div>

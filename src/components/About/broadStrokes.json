@@ -1,4 +1,5 @@
 {
+  "$schema": "./broadStrokesSchema.json",
   "data": [
     {
       "year": 1985,
@@ -45,7 +46,7 @@
       "events": [
         {
           "category": "education",
-          "description": "Earned bachelor's degree in music"
+          "description": "Earned BA in music and Japanese"
         },
         {
           "category": "relocation",
@@ -67,7 +68,7 @@
       "events": [
         {
           "category": "education",
-          "description": "Earned master's degree in games"
+          "description": "Earned MSc in game development"
         }
       ]
     },
@@ -117,6 +118,15 @@
         {
           "category": "relocation",
           "description": "Moved to Canada with family"
+        }
+      ]
+    },
+    {
+      "year": 2020,
+      "events": [
+        {
+          "category": "professional",
+          "description": "Started working at X2O Media"
         }
       ]
     }
