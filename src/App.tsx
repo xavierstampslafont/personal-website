@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.scss";
 import { Menu } from "./components/Menu";
-import Home from "./components/Home";
+import { Home } from "./components/Home";
 import { Background } from "./components/Background";
 import { Switch, Route } from "react-router-dom";
 import { About } from "./components/About";
