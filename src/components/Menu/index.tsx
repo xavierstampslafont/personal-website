@@ -13,30 +13,7 @@ interface Item {
 }
 
 export const Menu = (): JSX.Element => (
-  <div className="components-menu">
-    {getItems().map((item) => {
-      const content = (
-        <React.Fragment>
-          <Icon name={item.icon} />
-          {item.label}
-        </React.Fragment>
-      );
-
-      if (item.external) {
-        return (
-          <ExtLink key={item.label} to={item.link}>
-            {content}
-          </ExtLink>
-        );
-      }
-
-      return (
-        <NavLink key={item.label} to={item.link} activeClassName="active" exact>
-          {content}
-        </NavLink>
-      );
-    })}
-  </div>
+  <div className="components-menu">{getItems().map(itemFactory)}</div>
 );
 
 const getItems = (): Item[] => [
@@ -86,3 +63,26 @@ const getItems = (): Item[] => [
     external: true,
   },
 ];
+
+const itemFactory = (item: Item): JSX.Element => {
+  const content = (
+    <React.Fragment>
+      <Icon name={item.icon} />
+      {item.label}
+    </React.Fragment>
+  );
+
+  if (item.external) {
+    return (
+      <ExtLink key={item.label} to={item.link}>
+        {content}
+      </ExtLink>
+    );
+  }
+
+  return (
+    <NavLink key={item.label} to={item.link} activeClassName="active" exact>
+      {content}
+    </NavLink>
+  );
+};

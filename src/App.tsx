@@ -4,7 +4,7 @@ import { Menu } from "./components/Menu";
 import Home from "./components/Home";
 import { Background } from "./components/Background";
 import { Switch, Route } from "react-router-dom";
-import About from "./components/About";
+import { About } from "./components/About";
 import Thesis from "./components/Thesis";
 
 console.warn("TODO: Thesis real sizes for downloads");

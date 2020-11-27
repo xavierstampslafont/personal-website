@@ -14,61 +14,46 @@ interface YearEvents {
   events: Event[];
 }
 
-export default class About extends React.Component {
-  private eventCategoryToIconMap = new Map<string, SemanticICONS>([
-    ["personal", "heart"],
-    ["relocation", "plane"],
-    ["education", "university"],
-    ["professional", "travel"],
-  ]);
+const eventCategoryToIconMap = new Map<string, SemanticICONS>([
+  ["personal", "heart"],
+  ["relocation", "plane"],
+  ["education", "university"],
+  ["professional", "travel"],
+]);
 
-  constructor(props: any) {
-    super(props);
+export const About = (): JSX.Element => (
+  <div className="components-about components-content">
+    <h1>About</h1>
+    <p className="center">
+      Here's my life in broad strokes of years and events:
+    </p>
+    <Table
+      basic="very"
+      compact="very"
+      collapsing
+      tableData={broadStrokes.data}
+      renderBodyRow={yearFactory}
+    />
+  </div>
+);
 
-    this.yearFactory = this.yearFactory.bind(this);
-    this.eventFactory = this.eventFactory.bind(this);
+const yearFactory = (yearEvents: YearEvents): JSX.Element => (
+  <Table.Row verticalAlign="top" key={yearEvents.year}>
+    <Table.Cell content={yearEvents.year} />
+    <Table.Cell>{yearEvents.events.map(eventFactory)}</Table.Cell>
+  </Table.Row>
+);
+
+const eventFactory = (event: Event): JSX.Element => (
+  <p key={event.description}>
+    <Icon name={getIcon(event.category)} />
+    {event.description}
+  </p>
+);
+
+const getIcon = (eventCategory: string): SemanticICONS => {
+  if (eventCategoryToIconMap.has(eventCategory)) {
+    return eventCategoryToIconMap.get(eventCategory) as SemanticICONS;
   }
-
-  getIcon(eventCategory: string): SemanticICONS {
-    if (this.eventCategoryToIconMap.has(eventCategory)) {
-      return this.eventCategoryToIconMap.get(eventCategory) as SemanticICONS;
-    }
-    throw new Error(`Event category ${eventCategory} is missing icon mapping`);
-  }
-
-  eventFactory(event: Event): JSX.Element {
-    return (
-      <p key={event.description}>
-        <Icon name={this.getIcon(event.category)} />
-        {event.description}
-      </p>
-    );
-  }
-
-  yearFactory(yearEvents: YearEvents): JSX.Element {
-    return (
-      <Table.Row verticalAlign="top" key={yearEvents.year}>
-        <Table.Cell content={yearEvents.year} />
-        <Table.Cell>{yearEvents.events.map(this.eventFactory)}</Table.Cell>
-      </Table.Row>
-    );
-  }
-
-  render() {
-    return (
-      <div className="components-about components-content">
-        <h1>About</h1>
-        <p className="center">
-          Here's my life in broad strokes of years and events:
-        </p>
-        <Table
-          basic="very"
-          compact="very"
-          collapsing
-          tableData={broadStrokes.data}
-          renderBodyRow={this.yearFactory}
-        />
-      </div>
-    );
-  }
-}
+  throw new Error(`Event category ${eventCategory} is missing icon mapping`);
+};
