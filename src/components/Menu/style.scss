@@ -5,21 +5,18 @@
   right: 0;
   text-align: center;
 
-  span {
+  a {
     margin: 0 1em;
+    color: rgba(0, 0, 0, 0.8);
+  }
 
-    a {
-      color: rgba(0, 0, 0, 0.8);
-    }
+  a:hover {
+    position: relative;
+    bottom: 0.25em;
+  }
 
-    a:hover {
-      position: relative;
-      bottom: 0.25em;
-    }
-
-    a.active {
-      position: relative;
-      bottom: 0.5em;
-    }
+  a.active {
+    position: relative;
+    bottom: 0.5em;
   }
 }
