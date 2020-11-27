@@ -1,16 +1,10 @@
 import React from "react";
 
-interface LinkProps {
+export const ExtLink = (props: {
   to: string;
-}
-
-export default class Link extends React.Component<LinkProps> {
-  render() {
-    const { to, children } = this.props;
-    return (
-      <a href={to} target={"_blank"} rel={"noopener noreferrer"}>
-        {children}
-      </a>
-    );
-  }
-}
+  children: React.ReactNode;
+}): JSX.Element => (
+  <a href={props.to} target={"_blank"} rel={"noopener noreferrer"}>
+    {props.children}
+  </a>
+);

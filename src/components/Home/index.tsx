@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.scss";
 import portrait from "../../images/portrait.jpg";
-import ExtLink from "../ExtLink";
+import { ExtLink } from "../ExtLink";
 import links from "../ExtLink/links.json";
 import { Link } from "react-router-dom";
 

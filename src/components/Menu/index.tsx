@@ -2,8 +2,8 @@ import React from "react";
 import "./style.scss";
 import { Icon, SemanticICONS } from "semantic-ui-react";
 import { NavLink } from "react-router-dom";
-import ExtLink from "../ExtLink";
 import links from "../ExtLink/links.json";
+import { ExtLink } from "../ExtLink";
 
 interface Item {
   label: string;

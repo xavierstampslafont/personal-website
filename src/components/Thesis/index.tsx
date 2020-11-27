@@ -1,5 +1,5 @@
 import React from "react";
-import ExtLink from "../ExtLink";
+import { ExtLink } from "../ExtLink";
 import "./style.scss";
 
 const Heading = (props: { text: string; className?: string }) => {
@@ -176,8 +176,8 @@ export default class Thesis extends React.Component {
               text: "PDF",
               to:
                 "https://www.dropbox.com/s/plj2q7f128g5hth/Lange-Nielsen%2C%20Cassar%2C%20%26%20Stamps-Lafont%20-%20Thesis.pdf?dl=0",
-              sizeInMb: "1"
-            }
+              sizeInMb: "1",
+            },
           ])}
         </p>
         <p>
@@ -187,14 +187,14 @@ export default class Thesis extends React.Component {
               text: "Windows",
               to:
                 "https://www.dropbox.com/s/in1pqdhcbmalm88/Dungeon%20Maze%20%28Windows%29.zip?dl=0",
-              sizeInMb: "2"
+              sizeInMb: "2",
             },
             {
               text: "Mac",
               to:
                 "https://www.dropbox.com/s/jl35siaf8lcj4g7/Dungeon%20Maze%20%28Mac%29.zip?dl=0",
-              sizeInMb: "3"
-            }
+              sizeInMb: "3",
+            },
           ])}
         </p>
       </div>
