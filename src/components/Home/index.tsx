@@ -36,7 +36,8 @@ const getText = (): JSX.Element => (
     </p>
     <p>
       I have a master's degree in game development, and my thesis was on{" "}
-      <Link to="thesis">designing a digital game for the family</Link>.
+      <Link to="thesis">designing a digital game for the family</Link>. I also
+      have a bachelor's degree with double major in music and Japanese.
     </p>
     <p>
       I'm also a husband and a papa. Once upon a time,{" "}
