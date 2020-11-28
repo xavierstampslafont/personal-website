@@ -1,0 +1,74 @@
+{
+  "data": [
+    {
+      "time": "2020-Present",
+      "title": "Software Developer",
+      "description": "Remote collaboration software",
+      "company": "X2O Media",
+      "location": "Montreal, Canada",
+      "tech": "JavaScript (React, TypeScript, Node.js), MongoDB, TeamCity, PowerShell, Selenium, C#",
+      "processes": "Scrum, unit tests, code reviews, GitLab, CI",
+      "points": [
+        "Organizing tech talks focused on topics such as best practices, industry trends, productivity, etc",
+        "Refactored rigid build process into configuration-driven script",
+        "Developed context-aware bots for use in load tests"
+      ]
+    },
+    {
+      "time": "2019-2020",
+      "title": "Post-production Developer",
+      "description": "Maintenance and support of customer software",
+      "company": "Spiria",
+      "location": "Montreal, Canada",
+      "tech": "JavaScript (Karma, Jasmine), Python, PowerShell, HTML5, Oracle SQL, TeamCity",
+      "processes": "unit tests, code reviews, BitBucket, CI",
+      "points": ["Developed tool for generating overview of all environments"]
+    },
+    {
+      "time": "2019",
+      "title": "Full Stack Engineer",
+      "description": "B2B SaaS platform for supply chain payments",
+      "company": "Tradeshift",
+      "location": "Copenhagen, Denmark",
+      "tech": "Java (Spring Boot, Spring Batch, JUnit, Mockito), PostgreSQL, Groovy (Grails, Spock), HTML5, JavaScript (Angular), S3, Kubernetes",
+      "processes": "Scrum, Kanban, TDD, unit tests, code reviews, GitHub, microservices, CI/CD",
+      "points": [
+        "Focused on backend data cleaning and validation, batch jobs, and bug fixes",
+        "Refactored country-specific hard code into configurable solution, reducing development time per country from 3 weeks to 30 minutes"
+      ]
+    },
+    {
+      "time": "2018",
+      "title": "Frontend Developer",
+      "description": "MMO WWII strategy + FPS game",
+      "company": "Reto Moto",
+      "location": "Copenhagen, Denmark",
+      "tech": "ActionScript 3 (RobotLegs, Flex)",
+      "processes": "waterfall, Perforce",
+      "points": [
+        "Implemented fundamental changes and refactors to codebase for better architecture, performance, and development speed",
+        "Introduced code reviews within team",
+        "Organized daily internal playtest of game",
+        "Aided consultants with design and code questions",
+        "Wrote documentation for and onboarded other frontend developers",
+        "Analyzed entire game data and created schematic to document it"
+      ]
+    },
+    {
+      "time": "2013-2018",
+      "title": "Software Developer",
+      "description": "Social MMO for kids",
+      "company": "MovieStarPlanet",
+      "location": "Copenhagen, Denmark",
+      "tech": "ActionScript 3 (Feathers, Starling, RobotLegs), C# (.NET, NUnit), AWS (DynamoDB, CloudFront, S3, EC2, CloudWatch, SQL, TeamCity",
+      "processes": "Scrum, code reviews, unit tests, GitHub",
+      "points": [
+        "Built suite of batch scripts for automating art pipeline",
+        "Developed reusable code components for improving programmer workflows",
+        "Submitted and released game regularly on iOS, Android and web platforms",
+        "Participated in setting and executing the architecture of the codebase",
+        "Presented clean code principles and common design patterns to colleagues"
+      ]
+    }
+  ]
+}

@@ -6,6 +6,7 @@ import { Background } from "./components/Background";
 import { Switch, Route } from "react-router-dom";
 import { About } from "./components/About";
 import { Thesis } from "./components/Thesis";
+import { Work } from "./components/Work";
 
 console.warn("TODO: Thesis real sizes for downloads");
 
@@ -16,6 +17,9 @@ const App = (): JSX.Element => (
     <Switch>
       <Route path="/about">
         <About />
+      </Route>
+      <Route path="/work">
+        <Work />
       </Route>
       <Route path="/thesis">
         <Thesis />

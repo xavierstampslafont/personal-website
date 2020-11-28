@@ -28,6 +28,11 @@ const getItems = (): Item[] => [
     link: "/about",
   },
   {
+    label: "Work",
+    icon: "code",
+    link: "/work",
+  },
+  {
     label: "Thesis",
     icon: "university",
     link: "/thesis",
