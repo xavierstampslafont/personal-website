@@ -3,7 +3,6 @@
     {
       "time": "2020-Present",
       "title": "Software Developer",
-      "description": "Remote collaboration software",
       "company": "X2O Media",
       "location": "Montreal, Canada",
       "tech": "JavaScript (React, TypeScript, Node.js), MongoDB, TeamCity, PowerShell, Selenium, C#",
@@ -17,20 +16,18 @@
     {
       "time": "2019-2020",
       "title": "Post-production Developer",
-      "description": "Maintenance and support of customer software",
       "company": "Spiria",
       "location": "Montreal, Canada",
       "tech": "JavaScript (Karma, Jasmine), Python, PowerShell, HTML5, Oracle SQL, TeamCity",
-      "processes": "unit tests, code reviews, BitBucket, CI",
+      "processes": "Unit tests, code reviews, BitBucket, CI",
       "points": ["Developed tool for generating overview of all environments"]
     },
     {
       "time": "2019",
       "title": "Full Stack Engineer",
-      "description": "B2B SaaS platform for supply chain payments",
       "company": "Tradeshift",
       "location": "Copenhagen, Denmark",
-      "tech": "Java (Spring Boot, Spring Batch, JUnit, Mockito), PostgreSQL, Groovy (Grails, Spock), HTML5, JavaScript (Angular), S3, Kubernetes",
+      "tech": "Java (Spring Boot, Spring Batch, JUnit, Mockito), PostgreSQL, Groovy (Grails, Spock), Kubernetes",
       "processes": "Scrum, Kanban, TDD, unit tests, code reviews, GitHub, microservices, CI/CD",
       "points": [
         "Focused on backend data cleaning and validation, batch jobs, and bug fixes",
@@ -40,14 +37,12 @@
     {
       "time": "2018",
       "title": "Frontend Developer",
-      "description": "MMO WWII strategy + FPS game",
       "company": "Reto Moto",
       "location": "Copenhagen, Denmark",
       "tech": "ActionScript 3 (RobotLegs, Flex)",
-      "processes": "waterfall, Perforce",
+      "processes": "Waterfall, Perforce",
       "points": [
         "Implemented fundamental changes and refactors to codebase for better architecture, performance, and development speed",
-        "Introduced code reviews within team",
         "Organized daily internal playtest of game",
         "Aided consultants with design and code questions",
         "Wrote documentation for and onboarded other frontend developers",
@@ -57,7 +52,6 @@
     {
       "time": "2013-2018",
       "title": "Software Developer",
-      "description": "Social MMO for kids",
       "company": "MovieStarPlanet",
       "location": "Copenhagen, Denmark",
       "tech": "ActionScript 3 (Feathers, Starling, RobotLegs), C# (.NET, NUnit), AWS (DynamoDB, CloudFront, S3, EC2, CloudWatch, SQL, TeamCity",

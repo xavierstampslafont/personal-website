@@ -1,5 +1,6 @@
 import React from "react";
-import { Icon, Table, TableCell } from "semantic-ui-react";
+import { Icon, Table } from "semantic-ui-react";
+import { SemanticICONS } from "semantic-ui-react/dist/commonjs/generic";
 import work from "./work.json";
 
 export const Work = (): JSX.Element => (
@@ -28,37 +29,28 @@ const workFactory = (work: {
   <Table.Row verticalAlign="top" key={work.time}>
     <Table.Cell>
       <p>{work.time}</p>
-      <p>
-        <Icon name="briefcase" />
-        {work.company}
-      </p>
-      <p>
-        <Icon name="map marker alternate" />
-        {work.location}
-      </p>
+      <IconAndText icon="briefcase" text={work.company} />
+      <IconAndText icon="map marker alternate" text={work.location} />
     </Table.Cell>
     <Table.Cell>
       <p>
         <b>{work.title}</b>
       </p>
-      <p>
-        <Icon name="info circle" />
-        {work.description}
-      </p>
-      <p>
-        <Icon name="code" />
-        {work.tech}
-      </p>
-      <p>
-        <Icon name="cog" />
-        {work.processes}
-      </p>
+      <IconAndText icon="code" text={work.tech} />
+      <IconAndText icon="cog" text={work.processes} />
       {work.points.map((x) => (
-        <p>
-          <Icon name="caret right" />
-          {x}
-        </p>
+        <IconAndText icon="caret right" text={x} />
       ))}
     </Table.Cell>
   </Table.Row>
+);
+
+const IconAndText = (props: {
+  icon: SemanticICONS;
+  text: string;
+}): JSX.Element => (
+  <p>
+    <Icon name={props.icon} />
+    {props.text}
+  </p>
 );
