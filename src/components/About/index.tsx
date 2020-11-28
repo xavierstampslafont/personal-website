@@ -24,9 +24,7 @@ const eventCategoryToIconMap = new Map<string, SemanticICONS>([
 export const About = (): JSX.Element => (
   <div className="components-about components-content">
     <h1>About</h1>
-    <p className="center">
-      Here's my life in broad strokes of years and events:
-    </p>
+    <p className="center">Here's my life in broad strokes:</p>
     <Table
       basic="very"
       compact="very"
