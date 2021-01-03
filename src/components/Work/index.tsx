@@ -38,7 +38,7 @@ const workFactory = (work: {
       </p>
       <IconAndText icon="code" text={work.tech} />
       <IconAndText icon="cog" text={work.processes} />
-      {work.points.map((x) => (
+      {work.points?.map((x) => (
         <IconAndText icon="caret right" text={x} />
       ))}
     </Table.Cell>

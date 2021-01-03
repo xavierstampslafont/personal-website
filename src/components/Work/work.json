@@ -1,7 +1,14 @@
 {
   "data": [
     {
-      "time": "2020-Present",
+      "time": "2021",
+      "title": "Senior Frontend Developer",
+      "company": "SwiftCTRL",
+      "location": "Montreal, Canada",
+      "tech": "JavaScript (React, TypeScript)",
+      "processes": "Kanban"
+    },
+    {
       "time": "2020",
       "title": "Software Developer",
       "company": "X2O Media",
