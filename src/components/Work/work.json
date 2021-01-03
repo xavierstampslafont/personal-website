@@ -2,15 +2,18 @@
   "data": [
     {
       "time": "2020-Present",
+      "time": "2020",
       "title": "Software Developer",
       "company": "X2O Media",
       "location": "Montreal, Canada",
       "tech": "JavaScript (React, TypeScript, Node.js), MongoDB, TeamCity, PowerShell, Selenium, C#",
       "processes": "Scrum, unit tests, code reviews, GitLab, CI",
       "points": [
-        "Organizing tech talks focused on topics such as best practices, industry trends, productivity, etc",
+        "Implemented overhaul of dashboard UI and its architecture",
+        "Reduced frontend-backend message sizes by 50% for better performance",
         "Refactored rigid build process into configuration-driven script",
-        "Developed context-aware bots for use in load tests"
+        "Developed context-aware bots for use in load tests",
+        "Organized tech talks focused on best practices, productivity, and retrospectives"
       ]
     },
     {

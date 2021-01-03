@@ -29,12 +29,6 @@ const getText = (): JSX.Element => (
       mission is to create long-term value through code.
     </p>
     <p>
-      Currently I work at{" "}
-      <ExtLink to="https://www.x2omedia.com/">X2O Media</ExtLink>, developing
-      high-end collaborative software that radically improves how people teach,
-      learn and meet remotely.
-    </p>
-    <p>
       I have a master's degree in game development, and my thesis was on{" "}
       <Link to="thesis">designing a digital game for the family</Link>. I also
       have a bachelor's degree with double major in music and Japanese.
