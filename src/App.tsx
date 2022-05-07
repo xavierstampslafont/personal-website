@@ -15,18 +15,10 @@ const App = (): JSX.Element => (
     <Background />
     <Menu />
     <Routes>
-      <Route path="/about">
-        <About />
-      </Route>
-      <Route path="/work">
-        <Work />
-      </Route>
-      <Route path="/thesis">
-        <Thesis />
-      </Route>
-      <Route path="/">
-        <Home />
-      </Route>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/work" element={<Work />} />
+      <Route path="/thesis" element={<Thesis />} />
     </Routes>
   </div>
 );
