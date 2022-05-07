@@ -86,7 +86,12 @@ const itemFactory = (item: Item): JSX.Element => {
   }
 
   return (
-    <NavLink key={item.label} to={item.link} activeClassName="active" exact>
+    <NavLink
+      key={item.label}
+      to={item.link}
+      className={({ isActive }) => (isActive ? "active" : "")}
+      end
+    >
       {content}
     </NavLink>
   );

@@ -1,6 +1,5 @@
 import React from "react";
-import { Icon, Table } from "semantic-ui-react";
-import { SemanticICONS } from "semantic-ui-react/dist/commonjs/generic";
+import { Icon, SemanticICONS, Table } from "semantic-ui-react";
 import work from "./work.json";
 
 export const Work = (): JSX.Element => (

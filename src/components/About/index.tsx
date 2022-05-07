@@ -1,8 +1,7 @@
 import React from "react";
 import "./style.scss";
-import { Icon, Table } from "semantic-ui-react";
+import { Icon, SemanticICONS, Table } from "semantic-ui-react";
 import broadStrokes from "./broadStrokes.json";
-import { SemanticICONS } from "semantic-ui-react/dist/commonjs/generic";
 
 interface Event {
   category: string;

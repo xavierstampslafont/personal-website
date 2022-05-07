@@ -3,7 +3,7 @@ import "./App.scss";
 import { Menu } from "./components/Menu";
 import { Home } from "./components/Home";
 import { Background } from "./components/Background";
-import { Switch, Route } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import { About } from "./components/About";
 import { Thesis } from "./components/Thesis";
 import { Work } from "./components/Work";
@@ -14,7 +14,7 @@ const App = (): JSX.Element => (
   <div className="App">
     <Background />
     <Menu />
-    <Switch>
+    <Routes>
       <Route path="/about">
         <About />
       </Route>
@@ -27,7 +27,7 @@ const App = (): JSX.Element => (
       <Route path="/">
         <Home />
       </Route>
-    </Switch>
+    </Routes>
   </div>
 );
 
