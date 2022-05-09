@@ -47,9 +47,10 @@ const getText = () => {
         music and Japanese.
       </p>
       <p>
-        I'm also a husband, and a papa of two. Once upon a time,{" "}
-        <ExtLink to={links.music}>I used to make music</ExtLink> as well as{" "}
-        <ExtLink to={links.comics}>draw comics</ExtLink>. In my free time, I
+        I'm also a husband, and a papa of two. I've made{" "}
+        <ExtLink to={links.games}>some indie games</ExtLink>. Once upon a time,
+        I also used to <ExtLink to={links.music}> make music</ExtLink> as well
+        as <ExtLink to={links.comics}>draw comics</ExtLink>. In my free time, I
         enjoy spending time with my family, playing video games, and becoming a
         better developer.
       </p>
