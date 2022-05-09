@@ -3,7 +3,13 @@ import "./style.scss";
 import portrait from "../../images/portrait.jpg";
 import { ExtLink } from "../ExtLink";
 import links from "../ExtLink/links.json";
-import { Link } from "react-router-dom";
+import { intervalToDuration } from "date-fns";
+
+const FIRST_DEV_WORK = new Date(2011, 0);
+const DEV_EXPERIENCE_DURATION = intervalToDuration({
+  start: FIRST_DEV_WORK,
+  end: new Date(),
+});
 
 export const Home = (): JSX.Element => (
   <div className="components-home">
@@ -20,25 +26,33 @@ export const Home = (): JSX.Element => (
   </div>
 );
 
-const getText = (): JSX.Element => (
-  <React.Fragment>
-    <h1>Hello! I'm Xavier.</h1>
-    <p>
-      I'm a full stack software developer with 10 years of experience. I've
-      worked on web-based products, SaaS software, and games. As a developer, my
-      mission is to create long-term value through code.
-    </p>
-    <p>
-      I have a master's degree in game development, and my thesis was on{" "}
-      <Link to="thesis">designing a digital game for the family</Link>. I also
-      have a bachelor's degree with double major in music and Japanese.
-    </p>
-    <p>
-      I'm also a husband and a papa. Once upon a time,{" "}
-      <ExtLink to={links.music}>I used to make music</ExtLink> as well as{" "}
-      <ExtLink to={links.comics}>draw comics</ExtLink>. In my free time, I enjoy
-      spending time with my family, playing video games, and becoming a better
-      developer.
-    </p>
-  </React.Fragment>
-);
+const getText = () => {
+  return (
+    <>
+      <h1>Hello! I'm Xavier.</h1>
+      <p>
+        {`I'm a full stack software developer with ${DEV_EXPERIENCE_DURATION.years} years
+        of experience. I've worked on web-based products, SaaS, and games. As a developer,
+        my mission is to create long-term value through code.`}
+      </p>
+      <p>
+        Currently I work at{" "}
+        <ExtLink to={"https://swiftconnect.io/"}>SwiftConnect</ExtLink>,
+        developing a new platform that orchestrates access control, user
+        directory, visitor management, and space management systems.
+      </p>
+      <p>
+        I have a M.Sc. in game development, and my thesis was on designing a
+        digital game for the family. I also have a B.A. with double major in
+        music and Japanese.
+      </p>
+      <p>
+        I'm also a husband, and a papa of two. Once upon a time,{" "}
+        <ExtLink to={links.music}>I used to make music</ExtLink> as well as{" "}
+        <ExtLink to={links.comics}>draw comics</ExtLink>. In my free time, I
+        enjoy spending time with my family, playing video games, and becoming a
+        better developer.
+      </p>
+    </>
+  );
+};
