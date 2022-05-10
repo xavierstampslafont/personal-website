@@ -34,12 +34,14 @@ const getText = () => {
   return (
     <>
       <h1>Hello! I'm Xavier.</h1>
+      <span className="emoji">🙋‍♂️</span>
       <p>
         {`I'm a full stack software developer with ${DEV_EXPERIENCE_DURATION.years} years
         of experience in SaaS and games. 
         As a developer, my mission is to create long-term value through code. 
         I achieve this by specializing in clean code and refactoring.`}
       </p>
+      <span className="emoji">💼</span>
       <p>
         Currently I work at{" "}
         <ExtLink to={"https://swiftconnect.io/"}>SwiftConnect</ExtLink>,
@@ -48,23 +50,24 @@ const getText = () => {
         more on my professional experience, visit my{" "}
         <ExtLink to={links.linkedin}>LinkedIn profile</ExtLink>.
       </p>
+      <span className="emoji">🎓</span>
       <p>
         I have a M.Sc. in game development and design, and my thesis was on
         designing a digital game for the family. I also have a B.A. with double
         major in music composition and Japanese.
       </p>
+      <span className="emoji">👨‍👩‍👧‍👦</span>
       <p>
-        I'm also a husband, and a papa of two. Over the years, I've made{" "}
-        <ExtLink to={links.games}>games</ExtLink>,{" "}
+        I'm also a husband, and a papa of two. In my free time, I enjoy spending
+        time with my family, playing video and board games, and making things.
+        Over the years, I've made <ExtLink to={links.games}>games</ExtLink>,{" "}
         <ExtLink to={links.music}>music</ExtLink> and{" "}
-        <ExtLink to={links.comics}>comics</ExtLink>. In my free time, I enjoy
-        spending time with my family, playing video and board games, and
-        becoming a better developer.
+        <ExtLink to={links.comics}>comics</ExtLink>.
       </p>
       <p>
         Countries I've lived in:
         <br />
-        <span className="countries">🇮🇳 🇺🇸 🇫🇷 🇩🇰 🇨🇦</span>
+        <span className="emoji">🇮🇳 🇺🇸 🇫🇷 🇩🇰 🇨🇦</span>
       </p>
     </>
   );
