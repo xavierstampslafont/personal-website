@@ -17,7 +17,11 @@ export const Home = (): JSX.Element => (
       <tbody>
         <tr>
           <td>
-            <img src={portrait} className="home-portrait" alt="" />
+            <img
+              src={portrait}
+              className="home-portrait"
+              alt="Xavier on a sunny day"
+            />
           </td>
           <td className="home-text">{getText()}</td>
         </tr>
