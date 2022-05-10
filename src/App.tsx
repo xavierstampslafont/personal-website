@@ -4,8 +4,6 @@ import { Home } from "./components/Home";
 import { Background } from "./components/Background";
 import { Navigate, Route, Routes } from "react-router-dom";
 
-console.warn("TODO: Thesis real sizes for downloads");
-
 const App = (): JSX.Element => (
   <div className="App">
     <Background />

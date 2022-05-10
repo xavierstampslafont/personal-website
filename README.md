@@ -14,3 +14,4 @@ This is my personal website! It's my corner of the Internet, serving as a hub be
   - Links to other pages, maybe layed out around profile picture
 - Migrate from Sass to styled-components
 - Mobile friendly (responsive)
+- Thesis page
