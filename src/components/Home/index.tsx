@@ -59,6 +59,11 @@ const getText = () => {
         spending time with my family, playing video and board games, and
         becoming a better developer.
       </p>
+      <p>
+        Countries I've lived in:
+        <br />
+        <span className="countries">🇮🇳 🇺🇸 🇫🇷 🇩🇰 🇨🇦</span>
+      </p>
     </>
   );
 };
