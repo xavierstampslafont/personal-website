@@ -44,7 +44,9 @@ const getText = () => {
         Currently I work at{" "}
         <ExtLink to={"https://swiftconnect.io/"}>SwiftConnect</ExtLink>,
         developing a new platform that unifies and orchestrates access control,
-        user directory, visitor management, and space management systems.
+        user directory, visitor management, and space management systems. For
+        more on my professional experience, visit my{" "}
+        <ExtLink to={links.linkedin}>LinkedIn profile</ExtLink>.
       </p>
       <p>
         I have a M.Sc. in game development and design, and my thesis was on
