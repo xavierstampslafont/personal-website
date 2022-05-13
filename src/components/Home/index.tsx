@@ -67,7 +67,11 @@ const getText = () => {
       <p>
         Countries I've lived in:
         <br />
-        <span className="emoji">🇮🇳 🇺🇸 🇫🇷 🇩🇰 🇨🇦</span>
+        <span className="emoji">
+          <span title="India">🇮🇳</span> <span title="USA">🇺🇸</span>{" "}
+          <span title="France">🇫🇷</span> <span title="Denmark">🇩🇰</span>{" "}
+          <span title="Canada">🇨🇦</span>
+        </span>
       </p>
     </>
   );
