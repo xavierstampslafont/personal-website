@@ -1,6 +1,5 @@
 import React from "react";
 import { ExtLink } from "../ExtLink";
-import "./style.scss";
 
 export const Thesis = (): JSX.Element => (
   <div className="components-thesis components-content">
@@ -125,8 +124,7 @@ export const Thesis = (): JSX.Element => (
         links={[
           {
             text: "PDF",
-            to:
-              "https://www.dropbox.com/s/plj2q7f128g5hth/Lange-Nielsen%2C%20Cassar%2C%20%26%20Stamps-Lafont%20-%20Thesis.pdf?dl=0",
+            to: "https://www.dropbox.com/s/plj2q7f128g5hth/Lange-Nielsen%2C%20Cassar%2C%20%26%20Stamps-Lafont%20-%20Thesis.pdf?dl=0",
             sizeInMb: 1,
           },
         ]}
@@ -138,14 +136,12 @@ export const Thesis = (): JSX.Element => (
         links={[
           {
             text: "Windows",
-            to:
-              "https://www.dropbox.com/s/in1pqdhcbmalm88/Dungeon%20Maze%20%28Windows%29.zip?dl=0",
+            to: "https://www.dropbox.com/s/in1pqdhcbmalm88/Dungeon%20Maze%20%28Windows%29.zip?dl=0",
             sizeInMb: 2,
           },
           {
             text: "Mac",
-            to:
-              "https://www.dropbox.com/s/jl35siaf8lcj4g7/Dungeon%20Maze%20%28Mac%29.zip?dl=0",
+            to: "https://www.dropbox.com/s/jl35siaf8lcj4g7/Dungeon%20Maze%20%28Mac%29.zip?dl=0",
             sizeInMb: 3,
           },
         ]}

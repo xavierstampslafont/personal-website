@@ -1,17 +1,24 @@
 import React from "react";
-import "./App.scss";
-import { Home } from "./components/Home";
-import { Background } from "./components/Background";
 import { Navigate, Route, Routes } from "react-router-dom";
+import styled from "styled-components";
+import { Background } from "./components/Background";
+import { Home } from "./components/Home";
+import { GlobalStyle } from "./GlobalStyle";
+
+const StyledApp = styled.div`
+  width: 65em;
+  margin: auto;
+`;
 
 const App = (): JSX.Element => (
-  <div className="App">
+  <StyledApp>
+    <GlobalStyle />
     <Background />
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
-  </div>
+  </StyledApp>
 );
 
 export default App;
