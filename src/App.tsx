@@ -5,20 +5,20 @@ import { Background } from "./components/Background";
 import { Home } from "./components/Home";
 import { GlobalStyle } from "./GlobalStyle";
 
-const StyledApp = styled.div`
+const AppStyle = styled.div`
   width: 65em;
   margin: auto;
 `;
 
-const App = (): JSX.Element => (
-  <StyledApp>
+const App = () => (
+  <AppStyle>
     <GlobalStyle />
     <Background />
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
-  </StyledApp>
+  </AppStyle>
 );
 
 export default App;
