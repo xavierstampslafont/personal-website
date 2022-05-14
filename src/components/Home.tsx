@@ -10,9 +10,9 @@ const DEV_EXPERIENCE_DURATION = intervalToDuration({
   end: new Date(),
 });
 
-const Table = styled.table`
-  height: 90vh;
-`;
+// const Table = styled.table`
+//   height: 90vh;
+// `;
 
 const Portrait = styled.img`
   width: 25em;
@@ -20,11 +20,11 @@ const Portrait = styled.img`
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 `;
 
-const TextContainer = styled.td`
-  width: 40em;
-  text-align: center;
-  padding: 0 2em;
-`;
+// const TextContainer = styled.td`
+//   width: 40em;
+//   text-align: center;
+//   padding: 0 2em;
+// `;
 
 const Emoji = styled.span`
   font-size: 1.75em;
