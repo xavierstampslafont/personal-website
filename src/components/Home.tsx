@@ -72,7 +72,7 @@ const TextCell = () => (
     <Emoji>🎓</Emoji>
     <p>
       I have a M.Sc. in game development and design, and my thesis was on
-      designing a digital game for the family. I also have a B.A. with double
+      designing a digital game for families. I also have a B.A. with double
       major in music composition and Japanese.
     </p>
     <Emoji>👨‍👩‍👧‍👦</Emoji>
