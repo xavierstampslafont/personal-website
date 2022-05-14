@@ -31,24 +31,18 @@ const Emoji = styled.span`
 `;
 
 export const Home = () => (
-  <Table>
-    <tbody>
-      <tr>
-        <PortraitCell />
-        <TextCell />
-      </tr>
-    </tbody>
-  </Table>
+  <>
+    <PortraitCell />
+    <TextCell />
+  </>
 );
 
 const PortraitCell = () => (
-  <td>
-    <Portrait src={portrait} alt="Xavier on a sunny day" />
-  </td>
+  <Portrait src={portrait} alt="Xavier on a sunny day" />
 );
 
 const TextCell = () => (
-  <TextContainer>
+  <>
     <h1>Hello! I'm Xavier.</h1>
     <Emoji>🙋‍♂️</Emoji>
     <p>
@@ -91,5 +85,5 @@ const TextCell = () => (
       <Emoji title="France">🇫🇷</Emoji> <Emoji title="Denmark">🇩🇰</Emoji>{" "}
       <Emoji title="Canada">🇨🇦</Emoji>
     </p>
-  </TextContainer>
+  </>
 );
