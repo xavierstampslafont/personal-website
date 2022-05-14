@@ -1,5 +1,5 @@
 import React from "react";
-import { ExtLink } from "../ExtLink";
+import { ExtLink } from "./ExtLink";
 
 export const Thesis = (): JSX.Element => (
   <div className="components-thesis components-content">

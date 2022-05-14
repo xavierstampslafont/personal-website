@@ -1,9 +1,8 @@
 import { intervalToDuration } from "date-fns";
 import React from "react";
 import styled from "styled-components";
-import portrait from "../../images/portrait.jpg";
-import { ExtLink } from "../ExtLink";
-import links from "../ExtLink/links.json";
+import portrait from "../images/portrait.jpg";
+import { ExtLink } from "./ExtLink";
 
 const FIRST_DEV_WORK = new Date(2011, 0);
 const DEV_EXPERIENCE_DURATION = intervalToDuration({
@@ -64,7 +63,10 @@ const getText = () => {
         developing a new platform that unifies and orchestrates access control,
         user directory, visitor management, and space management systems. For
         more on my professional experience, visit my{" "}
-        <ExtLink to={links.linkedin}>LinkedIn profile</ExtLink>.
+        <ExtLink to={"https://www.linkedin.com/in/xavierstampslafont/"}>
+          LinkedIn profile
+        </ExtLink>
+        .
       </p>
       <StyledEmoji>🎓</StyledEmoji>
       <p>
@@ -76,9 +78,13 @@ const getText = () => {
       <p>
         I'm also a husband, and a papa of two. In my free time, I enjoy spending
         time with my family, playing video and board games, and making things.
-        Over the years, I've made <ExtLink to={links.games}>games</ExtLink>,{" "}
-        <ExtLink to={links.music}>music</ExtLink> and{" "}
-        <ExtLink to={links.comics}>comics</ExtLink>.
+        Over the years, I've made{" "}
+        <ExtLink to={"https://xavierstampslafont.itch.io/"}>games</ExtLink>,{" "}
+        <ExtLink to={"https://soundcloud.com/xavierstampslafont"}>
+          music
+        </ExtLink>{" "}
+        and{" "}
+        <ExtLink to={"https://howsyouroktea.wordpress.com/"}>comics</ExtLink>.
       </p>
       <p>
         Countries I've lived in:
