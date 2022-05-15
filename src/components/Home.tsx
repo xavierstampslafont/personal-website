@@ -59,10 +59,10 @@ const TextCell = () => (
     <Emoji>💼</Emoji>
     <p>
       Currently I work at{" "}
-      <ExtLink to={"https://swiftconnect.io/"}>SwiftConnect</ExtLink>,
-      developing a new platform that unifies and orchestrates access control,
-      user directory, visitor management, and space management systems. For more
-      on my professional experience, visit my{" "}
+      <ExtLink to={"https://swiftconnect.io/"}>SwiftConnect</ExtLink>, where we
+      are developing a new platform that unifies and orchestrates access
+      control, user directory, visitor management, and space management systems.
+      For more on my professional experience, visit my{" "}
       <ExtLink to={"https://www.linkedin.com/in/xavierstampslafont/"}>
         LinkedIn profile
       </ExtLink>
@@ -71,8 +71,8 @@ const TextCell = () => (
     <Emoji>🎓</Emoji>
     <p>
       I have a M.Sc. in game development and design, and my thesis was on
-      designing a digital game for families. I also have a B.A. with double
-      major in music composition and Japanese.
+      designing digital games for families. I also have a B.A. with double major
+      in music composition and Japanese.
     </p>
     <Emoji>👨‍👩‍👧‍👦</Emoji>
     <p>
