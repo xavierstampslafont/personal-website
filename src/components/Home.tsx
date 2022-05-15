@@ -13,11 +13,11 @@ const DEV_EXPERIENCE_DURATION = intervalToDuration({
 const Portrait = styled.img`
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 
-  width: 100%;
+  width: 80%;
 
   margin-bottom: 1em;
 
-  @media only screen and (min-width: 23em) {
+  @media only screen and (min-width: 25em) {
     width: 25em;
   }
 `;
