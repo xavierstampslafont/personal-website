@@ -10,7 +10,7 @@ const DEV_EXPERIENCE_DURATION = intervalToDuration({
   end: new Date(),
 });
 
-const Portrait = styled.img`
+const StyledImg = styled.img`
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 
   width: 80%;
@@ -26,29 +26,31 @@ const Emoji = styled.span`
   font-size: 1.75em;
 `;
 
-const Container = styled.div`
+const VerticalContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 `;
 
+const Container = styled(VerticalContainer)`
+  @media only screen and (min-width: 768px) {
+    flex-direction: row;
+  }
+`;
+
 export const Home = () => (
   <Container>
-    <GreetingCell />
-    <PortraitCell />
-    <TextCell />
+    <Portrait />
+    <Text />
   </Container>
 );
 
-const GreetingCell = () => <h1>Hello! I'm Xavier.</h1>;
+const Portrait = () => <StyledImg src={portrait} alt="Xavier on a sunny day" />;
 
-const PortraitCell = () => (
-  <Portrait src={portrait} alt="Xavier on a sunny day" />
-);
-
-const TextCell = () => (
-  <>
+const Text = () => (
+  <VerticalContainer>
+    <h1>Hello! I'm Xavier.</h1>
     <Emoji>🙋‍♂️</Emoji>
     <p>
       I'm a full stack software developer with {DEV_EXPERIENCE_DURATION.years}{" "}
@@ -90,5 +92,5 @@ const TextCell = () => (
       <Emoji title="France">🇫🇷</Emoji> <Emoji title="Denmark">🇩🇰</Emoji>{" "}
       <Emoji title="Canada">🇨🇦</Emoji>
     </p>
-  </>
+  </VerticalContainer>
 );

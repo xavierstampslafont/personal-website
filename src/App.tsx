@@ -6,7 +6,7 @@ import { Home } from "./components/Home";
 import { GlobalStyle } from "./GlobalStyle";
 
 const AppStyle = styled.div`
-  margin: 1em;
+  margin: 3em 1em;
 `;
 
 const App = () => (
