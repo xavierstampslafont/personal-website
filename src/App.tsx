@@ -6,8 +6,7 @@ import { Home } from "./components/Home";
 import { GlobalStyle } from "./GlobalStyle";
 
 const AppStyle = styled.div`
-  /* width: 65em;
-  margin: auto; */
+  margin: 1em;
 `;
 
 const App = () => (

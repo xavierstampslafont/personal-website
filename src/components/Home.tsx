@@ -10,32 +10,38 @@ const DEV_EXPERIENCE_DURATION = intervalToDuration({
   end: new Date(),
 });
 
-// const Table = styled.table`
-//   height: 90vh;
-// `;
-
 const Portrait = styled.img`
-  width: 25em;
-  height: 25em;
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-`;
 
-// const TextContainer = styled.td`
-//   width: 40em;
-//   text-align: center;
-//   padding: 0 2em;
-// `;
+  width: 100%;
+
+  margin-bottom: 1em;
+
+  @media only screen and (min-width: 23em) {
+    width: 25em;
+  }
+`;
 
 const Emoji = styled.span`
   font-size: 1.75em;
 `;
 
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+`;
+
 export const Home = () => (
-  <>
+  <Container>
+    <GreetingCell />
     <PortraitCell />
     <TextCell />
-  </>
+  </Container>
 );
+
+const GreetingCell = () => <h1>Hello! I'm Xavier.</h1>;
 
 const PortraitCell = () => (
   <Portrait src={portrait} alt="Xavier on a sunny day" />
@@ -43,13 +49,12 @@ const PortraitCell = () => (
 
 const TextCell = () => (
   <>
-    <h1>Hello! I'm Xavier.</h1>
     <Emoji>🙋‍♂️</Emoji>
     <p>
-      {`I'm a full stack software developer with ${DEV_EXPERIENCE_DURATION.years} years
-        of experience in SaaS and games. 
-        As a developer, my mission is to create long-term value through code. 
-        I achieve this by specializing in clean code and refactoring.`}
+      I'm a full stack software developer with {DEV_EXPERIENCE_DURATION.years}{" "}
+      years of experience in SaaS and games. As a developer, my mission is to
+      create long-term value through code. I achieve this by specializing in
+      clean code and refactoring.
     </p>
     <Emoji>💼</Emoji>
     <p>
