@@ -7,6 +7,15 @@ import { GlobalStyle } from "./GlobalStyle";
 
 const AppStyle = styled.div`
   margin: 3em 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @media only screen and (min-width: 768px) {
+    margin: 0;
+    height: 100vh;
+  }
 `;
 
 const App = () => (

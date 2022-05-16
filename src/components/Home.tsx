@@ -3,6 +3,7 @@ import React from "react";
 import styled from "styled-components";
 import portrait from "../images/portrait.jpg";
 import { ExtLink } from "./ExtLink";
+import { VerticalFlex } from "./Flex";
 
 const FIRST_DEV_WORK = new Date(2011, 0);
 const DEV_EXPERIENCE_DURATION = intervalToDuration({
@@ -26,17 +27,14 @@ const Emoji = styled.span`
   font-size: 1.75em;
 `;
 
-const VerticalContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-`;
-
-const Container = styled(VerticalContainer)`
+const Container = styled(VerticalFlex)`
   @media only screen and (min-width: 768px) {
     flex-direction: row;
   }
+`;
+
+const TextContainer = styled(VerticalFlex)`
+  max-width: 35em;
 `;
 
 export const Home = () => (
@@ -49,7 +47,7 @@ export const Home = () => (
 const Portrait = () => <StyledImg src={portrait} alt="Xavier on a sunny day" />;
 
 const Text = () => (
-  <VerticalContainer>
+  <TextContainer>
     <h1>Hello! I'm Xavier.</h1>
     <Emoji>🙋‍♂️</Emoji>
     <p>
@@ -92,5 +90,5 @@ const Text = () => (
       <Emoji title="France">🇫🇷</Emoji> <Emoji title="Denmark">🇩🇰</Emoji>{" "}
       <Emoji title="Canada">🇨🇦</Emoji>
     </p>
-  </VerticalContainer>
+  </TextContainer>
 );
