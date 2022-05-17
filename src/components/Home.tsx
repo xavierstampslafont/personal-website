@@ -20,6 +20,8 @@ const StyledImg = styled.img`
 
   @media only screen and (min-width: 25em) {
     width: 25em;
+
+    margin-bottom: 0;
   }
 `;
 
