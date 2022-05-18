@@ -3,7 +3,6 @@ import React from "react";
 import styled from "styled-components";
 import portrait from "../images/portrait.jpg";
 import { ExtLink } from "./ExtLink";
-import { VerticalFlex } from "./Flex";
 
 const FIRST_DEV_WORK = new Date(2011, 0);
 const DEV_EXPERIENCE_DURATION = intervalToDuration({
@@ -29,13 +28,21 @@ const Emoji = styled.span`
   font-size: 1.75em;
 `;
 
-const Container = styled(VerticalFlex)`
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   @media only screen and (min-width: 768px) {
     flex-direction: row;
   }
 `;
 
-const TextContainer = styled(VerticalFlex)`
+const TextContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   max-width: 35em;
 `;
 
