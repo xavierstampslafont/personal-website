@@ -55,11 +55,12 @@ const TextContainer = styled.div`
   @media only screen and (min-width: 768px) {
     position: absolute;
     left: 40vw;
-  }
 
-  @media only screen and (min-height: 554px) {
-    justify-content: center;
-    height: 100vh;
+    // Natural height of the container. Converting px to em didn't work well, so sticking with this
+    @media (min-height: 635px) {
+      justify-content: center;
+      height: 100vh;
+    }
   }
 `;
 
