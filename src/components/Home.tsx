@@ -22,6 +22,12 @@ const StyledImg = styled.img`
 
     margin-bottom: 0;
   }
+
+  @media only screen and (min-width: 768px) {
+    position: fixed;
+    top: calc(50vh - 25em / 2);
+    right: 60vw;
+  }
 `;
 
 const Emoji = styled.span`
@@ -35,7 +41,6 @@ const Container = styled.div`
   margin: 3em 1em;
 
   @media only screen and (min-width: 768px) {
-    flex-direction: row;
     margin: 0;
   }
 `;
@@ -46,6 +51,16 @@ const TextContainer = styled.div`
   align-items: center;
   text-align: center;
   max-width: 35em;
+
+  @media only screen and (min-width: 768px) {
+    position: absolute;
+    left: 40vw;
+  }
+
+  @media only screen and (min-height: 554px) {
+    justify-content: center;
+    height: 100vh;
+  }
 `;
 
 export const Home = () => (
