@@ -32,9 +32,11 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 3em 1em;
 
   @media only screen and (min-width: 768px) {
     flex-direction: row;
+    margin: 0;
   }
 `;
 
