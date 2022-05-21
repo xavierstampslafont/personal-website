@@ -14,11 +14,13 @@ const StyledImg = styled.img`
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 
   width: 80%;
+  height: 80%;
 
   margin-bottom: 1em;
 
   @media only screen and (min-width: 25em) {
     width: 25em;
+    height: 25em;
 
     margin-bottom: 0;
   }
@@ -71,7 +73,14 @@ export const Home = () => (
   </Container>
 );
 
-const Portrait = () => <StyledImg src={portrait} alt="Xavier on a sunny day" />;
+const Portrait = () => (
+  <StyledImg
+    src={portrait}
+    alt="Xavier on a sunny day"
+    width="400px"
+    height="400px"
+  />
+);
 
 const Text = () => (
   <TextContainer>
