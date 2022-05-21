@@ -23,12 +23,12 @@ const StyledImg = styled.img`
     height: 25em;
 
     margin-bottom: 0;
-  }
 
-  @media only screen and (min-width: 768px) {
-    position: fixed;
-    top: calc(50vh - 25em / 2);
-    right: 60vw;
+    @media (min-width: 768px) {
+      position: fixed;
+      top: calc(50vh - 25em / 2);
+      right: 60vw;
+    }
   }
 `;
 
