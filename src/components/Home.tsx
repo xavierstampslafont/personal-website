@@ -26,8 +26,16 @@ const StyledImg = styled.img`
 
     @media (min-width: 768px) {
       position: fixed;
-      top: calc(50vh - 25em / 2);
+      top: calc(50vh - 40vw / 2);
       right: 60vw;
+      width: 40vw;
+      height: 40vw;
+
+      @media (min-width: 1000px) {
+        top: calc(50vh - 25em / 2);
+        width: 25em;
+        height: 25em;
+      }
     }
   }
 `;
