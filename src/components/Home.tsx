@@ -10,6 +10,33 @@ const DEV_EXPERIENCE_DURATION = intervalToDuration({
   end: new Date(),
 });
 
+export const Home = () => (
+  <Container>
+    <Portrait />
+    <Text />
+  </Container>
+);
+
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3em 1em;
+
+  @media only screen and (min-width: 768px) {
+    margin: 0;
+  }
+`;
+
+const Portrait = () => (
+  <StyledImg
+    src={portrait}
+    alt="Xavier on a sunny day"
+    width="400px"
+    height="400px"
+  />
+);
+
 const StyledImg = styled.img`
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 
@@ -40,56 +67,6 @@ const StyledImg = styled.img`
     }
   }
 `;
-
-const Emoji = styled.span`
-  font-size: 1.75em;
-`;
-
-const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 3em 1em;
-
-  @media only screen and (min-width: 768px) {
-    margin: 0;
-  }
-`;
-
-const TextContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  max-width: 35em;
-
-  @media only screen and (min-width: 768px) {
-    position: absolute;
-    left: 40vw;
-
-    // Natural height of the container. Converting px to em didn't work well, so sticking with this
-    @media (min-height: 635px) {
-      justify-content: center;
-      height: 100vh;
-    }
-  }
-`;
-
-export const Home = () => (
-  <Container>
-    <Portrait />
-    <Text />
-  </Container>
-);
-
-const Portrait = () => (
-  <StyledImg
-    src={portrait}
-    alt="Xavier on a sunny day"
-    width="400px"
-    height="400px"
-  />
-);
 
 const Text = () => (
   <TextContainer>
@@ -137,3 +114,26 @@ const Text = () => (
     </p>
   </TextContainer>
 );
+
+const TextContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 35em;
+
+  @media only screen and (min-width: 768px) {
+    position: absolute;
+    left: 40vw;
+
+    // Natural height of the container. Converting px to em didn't work well, so sticking with this
+    @media (min-height: 635px) {
+      justify-content: center;
+      height: 100vh;
+    }
+  }
+`;
+
+const Emoji = styled.span`
+  font-size: 1.75em;
+`;
