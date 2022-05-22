@@ -11,13 +11,13 @@ const DEV_EXPERIENCE_DURATION = intervalToDuration({
 });
 
 export const Home = () => (
-  <Container>
+  <StyledHome>
     <Portrait />
-    <Text />
-  </Container>
+    <BodyText />
+  </StyledHome>
 );
 
-const Container = styled.div`
+const StyledHome = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,7 +29,7 @@ const Container = styled.div`
 `;
 
 const Portrait = () => (
-  <StyledImg
+  <StyledPortrait
     src={portrait}
     alt="Xavier on a sunny day"
     width="400px"
@@ -37,7 +37,7 @@ const Portrait = () => (
   />
 );
 
-const StyledImg = styled.img`
+const StyledPortrait = styled.img`
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 
   width: 80%;
@@ -68,8 +68,8 @@ const StyledImg = styled.img`
   }
 `;
 
-const Text = () => (
-  <TextContainer>
+const BodyText = () => (
+  <StyledBodyText>
     <h1>Hello! I'm Xavier.</h1>
     <Emoji>🙋‍♂️</Emoji>
     <p>
@@ -112,10 +112,10 @@ const Text = () => (
       <Emoji title="France">🇫🇷</Emoji> <Emoji title="Denmark">🇩🇰</Emoji>{" "}
       <Emoji title="Canada">🇨🇦</Emoji>
     </p>
-  </TextContainer>
+  </StyledBodyText>
 );
 
-const TextContainer = styled.div`
+const StyledBodyText = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
