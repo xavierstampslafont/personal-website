@@ -5,14 +5,14 @@ import { Home } from "./components/Home";
 import { GlobalStyle } from "./GlobalStyle";
 
 const App = () => (
-  <div>
+  <>
     <GlobalStyle />
     <Background />
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
-  </div>
+  </>
 );
 
 export default App;
