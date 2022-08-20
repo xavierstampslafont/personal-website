@@ -75,7 +75,7 @@ const BodyText = () => (
     <p>
       I'm a full stack software developer with {DEV_EXPERIENCE_DURATION.years}{" "}
       years of experience in SaaS and games. As a developer, my mission is to
-      create long-term value through code. I achieve this by specializing in
+      build long-term value through code. I achieve this by specializing in
       clean code and refactoring.
     </p>
     <Emoji>💼</Emoji>
