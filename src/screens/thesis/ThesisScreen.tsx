@@ -1,7 +1,7 @@
 import React from "react";
-import { ExternalLink } from "./ExternalLink";
+import { ExternalLink } from "../../components";
 
-export const Thesis = (): JSX.Element => (
+export const ThesisScreen = (): JSX.Element => (
   <div className="components-thesis components-content">
     <h1>Designing a Digital Game for the Family</h1>
     <Heading
