@@ -1,5 +1,5 @@
 import React from "react";
-import { ExtLink } from "./ExtLink";
+import { ExternalLink } from "./ExternalLink";
 
 export const Thesis = (): JSX.Element => (
   <div className="components-thesis components-content">
@@ -14,7 +14,9 @@ export const Thesis = (): JSX.Element => (
     />
     <HeadingWithInlineContent
       text="Supervisor"
-      content={<ExtLink to="http://rillakhaled.com/">Rilla Khaled</ExtLink>}
+      content={
+        <ExternalLink to="http://rillakhaled.com/">Rilla Khaled</ExternalLink>
+      }
     />
     <Heading text="Research question" />
     <p>
@@ -175,7 +177,9 @@ const DownloadLinks = (props: {
   <span>
     {props.links.map((pair, index) => (
       <span key={pair.text}>
-        <ExtLink to={pair.to}>{`${pair.text} (${pair.sizeInMb} MB)`}</ExtLink>
+        <ExternalLink
+          to={pair.to}
+        >{`${pair.text} (${pair.sizeInMb} MB)`}</ExternalLink>
         {index < props.links.length - 1 && " | "}
       </span>
     ))}
