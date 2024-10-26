@@ -1,7 +1,7 @@
 import { intervalToDuration } from "date-fns"
 import React from "react"
-import styled from "styled-components"
 import { ExternalLink } from "../../components"
+import styles from "./HomeScreen.module.css"
 import { Portrait } from "./Portrait"
 
 const FIRST_DEV_WORK = new Date(2011, 0)
@@ -11,34 +11,23 @@ const DEV_EXPERIENCE_DURATION = intervalToDuration({
 })
 
 export const HomeScreen = () => (
-  <StyledHomeScreen>
+  <div className={styles.homeScreen}>
     <Portrait />
     <BodyText />
-  </StyledHomeScreen>
+  </div>
 )
 
-const StyledHomeScreen = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 3em 1em;
-
-  @media only screen and (min-width: 768px) {
-    margin: 0;
-  }
-`
-
 const BodyText = () => (
-  <StyledBodyText>
+  <div className={styles.bodyText}>
     <h1>Hello! I'm Xavier.</h1>
-    <Emoji>🙋‍♂️</Emoji>
+    <span className={styles.emoji}>🙋‍♂️</span>
     <p>
       I'm a full stack software developer with {DEV_EXPERIENCE_DURATION.years}{" "}
       years of experience in SaaS and games. As a developer, my mission is to
       build long-term value through code. I achieve this by specializing in
       clean code and refactoring.
     </p>
-    <Emoji>💼</Emoji>
+    <span className={styles.emoji}>💼</span>
     <p>
       I have worked in a diverse range of industries, including access
       management, communication, retail, fintech and video games. In addition, I
@@ -50,13 +39,13 @@ const BodyText = () => (
       </ExternalLink>
       .
     </p>
-    <Emoji>🎓</Emoji>
+    <span className={styles.emoji}>🎓</span>
     <p>
       I have a M.Sc. in game development and design, and my thesis was on
       designing digital games for families. I also have a B.A. with double major
       in music composition and Japanese.
     </p>
-    <Emoji>🧑‍🧑‍🧒‍🧒</Emoji>
+    <span className={styles.emoji}>🧑‍🧑‍🧒‍🧒</span>
     <p>
       I'm also a husband, and a papa of two. In my free time, I enjoy spending
       time with my family, playing video and board games, and making things.
@@ -77,32 +66,24 @@ const BodyText = () => (
     <p>
       Countries I've lived in:
       <br />
-      <Emoji title="India">🇮🇳</Emoji> <Emoji title="USA">🇺🇸</Emoji>{" "}
-      <Emoji title="Japan">🇯🇵</Emoji> <Emoji title="France">🇫🇷</Emoji>{" "}
-      <Emoji title="Denmark">🇩🇰</Emoji> <Emoji title="Canada">🇨🇦</Emoji>
+      <span className={styles.emoji} title="India">
+        🇮🇳
+      </span>{" "}
+      <span className={styles.emoji} title="USA">
+        🇺🇸
+      </span>{" "}
+      <span className={styles.emoji} title="Japan">
+        🇯🇵
+      </span>{" "}
+      <span className={styles.emoji} title="France">
+        🇫🇷
+      </span>{" "}
+      <span className={styles.emoji} title="Denmark">
+        🇩🇰
+      </span>{" "}
+      <span className={styles.emoji} title="Canada">
+        🇨🇦
+      </span>
     </p>
-  </StyledBodyText>
+  </div>
 )
-
-const StyledBodyText = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  max-width: 35em;
-
-  @media only screen and (min-width: 768px) {
-    position: absolute;
-    left: 40vw;
-
-    // Natural height of the container. Converting px to em didn't work well, so sticking with this
-    @media (min-height: 635px) {
-      justify-content: center;
-      height: 100vh;
-    }
-  }
-`
-
-const Emoji = styled.span`
-  font-size: 1.75em;
-`

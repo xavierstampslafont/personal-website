@@ -1,0 +1,33 @@
+.homeScreen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3em 1em;
+
+  @media only screen and (min-width: 768px) {
+    margin: 0;
+  }
+}
+
+.bodyText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 35em;
+
+  @media only screen and (min-width: 768px) {
+    position: absolute;
+    left: 40vw;
+
+    /* Natural height of the container. Converting px to em didn't work well, so sticking with this */
+    @media (min-height: 635px) {
+      justify-content: center;
+      height: 100vh;
+    }
+  }
+}
+
+.emoji {
+  font-size: 1.75em;
+}
