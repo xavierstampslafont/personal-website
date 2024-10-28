@@ -29,11 +29,11 @@ const BodyText = () => (
     </p>
     <span className={styles.emoji}>💼</span>
     <p>
-      I have worked in a diverse range of industries, including access
-      management, communication, retail, fintech and video games. In addition, I
-      have worked across different types of companies, from startups to
-      consultancy, and even a unicorn. For more on my professional experience,
-      visit my{" "}
+      As a software developer, I have worked in a diverse range of industries,
+      including access management, communication, retail, fintech and video
+      games. In addition, I have worked across different types of companies,
+      from startups to consultancy, and even a unicorn. For more on my
+      professional experience, visit my{" "}
       <ExternalLink to={"https://www.linkedin.com/in/xavierstampslafont/"}>
         LinkedIn profile
       </ExternalLink>
