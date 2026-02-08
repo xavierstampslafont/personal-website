@@ -22,18 +22,18 @@ const BodyText = () => (
     <h1>Hello! I'm Xavier.</h1>
     <span className={styles.emoji}>🙋‍♂️</span>
     <p>
-      I'm a full stack software developer with {DEV_EXPERIENCE_DURATION.years}{" "}
-      years of experience in SaaS and games. As a developer, my mission is to
-      build long-term value through code. I achieve this by specializing in
-      clean code and refactoring.
+      I'm a senior full-stack product engineer with{" "}
+      {DEV_EXPERIENCE_DURATION.years} years of experience building SaaS and game
+      systems. I take ownership of complex initiatives end-to-end, helping teams
+      deliver practical, reliable, and maintainable software.
     </p>
     <span className={styles.emoji}>💼</span>
     <p>
       As a software developer, I have worked in a diverse range of industries,
-      including access management, communication, retail, fintech and video
-      games. In addition, I have worked across different types of companies,
-      from startups to consultancy, and even a unicorn. For more on my
-      professional experience, visit my{" "}
+      including maintenance management, access management, communication,
+      retail, fintech and video games. In addition, I have worked across
+      different types of companies, from startups to consultancy, and even a
+      unicorn. For more on my professional experience, visit my{" "}
       <ExternalLink to={"https://www.linkedin.com/in/xavierstampslafont/"}>
         LinkedIn profile
       </ExternalLink>
