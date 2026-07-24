@@ -1,1 +1,1 @@
-export * from "./ThesisScreen";
+export * from "./ThesisScreen.js"

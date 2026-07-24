@@ -1,8 +1,8 @@
 import { intervalToDuration } from "date-fns"
 import React from "react"
-import { ExternalLink } from "../../components"
+import { ExternalLink } from "../../components/index.js"
 import styles from "./HomeScreen.module.css"
-import { Portrait } from "./Portrait"
+import { Portrait } from "./Portrait.js"
 
 const FIRST_DEV_WORK = new Date(2011, 0)
 const DEV_EXPERIENCE_DURATION = intervalToDuration({

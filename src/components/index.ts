@@ -1,2 +1,2 @@
-export * from "./Background";
-export * from "./ExternalLink";
+export * from "./Background.js"
+export * from "./ExternalLink.js"

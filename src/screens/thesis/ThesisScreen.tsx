@@ -1,5 +1,5 @@
-import React from "react";
-import { ExternalLink } from "../../components";
+import React, { JSX } from "react"
+import { ExternalLink } from "../../components/index.js"
 
 export const ThesisScreen = (): JSX.Element => (
   <div className="components-thesis components-content">
@@ -150,29 +150,29 @@ export const ThesisScreen = (): JSX.Element => (
       />
     </p>
   </div>
-);
+)
 
 const Heading = (props: { text: string; className?: string }) => (
   <p className={props.className}>
     <b>{props.text}</b>
   </p>
-);
+)
 
 const HeadingWithInlineContent = (props: {
-  text: string;
-  content: string | JSX.Element;
+  text: string
+  content: string | JSX.Element
 }) => (
   <p>
     <b>{props.text}</b>: {props.content}
   </p>
-);
+)
 
 const DownloadLinks = (props: {
   links: {
-    text: string;
-    to: string;
-    sizeInMb: number;
-  }[];
+    text: string
+    to: string
+    sizeInMb: number
+  }[]
 }): JSX.Element => (
   <span>
     {props.links.map((pair, index) => (
@@ -184,4 +184,4 @@ const DownloadLinks = (props: {
       </span>
     ))}
   </span>
-);
+)

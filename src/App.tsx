@@ -1,8 +1,8 @@
 import React from "react"
-import { Navigate, Route, Routes } from "react-router-dom"
+import { Navigate, Route, Routes } from "react-router"
 import "./App.css"
-import { Background } from "./components"
-import { HomeScreen } from "./screens"
+import { Background } from "./components/index.js"
+import { HomeScreen } from "./screens/index.js"
 
 const App = () => (
   <>
