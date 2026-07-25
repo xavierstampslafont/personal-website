@@ -1,8 +1,8 @@
-import { ExternalLink } from "#/components/ExternalLink.js"
+import { ExternalLink } from "#/components/external-link/ExternalLink.js"
+import { Portrait } from "#/components/portrait/Portrait.js"
 import { intervalToDuration } from "date-fns"
 import React from "react"
 import styles from "./HomeScreen.module.css"
-import { Portrait } from "./Portrait.js"
 
 const FIRST_DEV_WORK = new Date(2011, 0)
 const DEV_EXPERIENCE_DURATION = intervalToDuration({
