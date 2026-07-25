@@ -1,5 +1,5 @@
-import { Background } from "#/components/index.js"
-import { HomeScreen } from "#/screens/index.js"
+import { Background } from "#/components/Background.js"
+import { HomeScreen } from "#/screens/home/HomeScreen.js"
 import React from "react"
 import { Navigate, Route, Routes } from "react-router"
 import "./App.css"
