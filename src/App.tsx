@@ -4,7 +4,7 @@ import "./App.css"
 import { Background } from "./components/index.js"
 import { HomeScreen } from "./screens/index.js"
 
-const App = () => (
+export const App = () => (
   <>
     <Background />
     <Routes>
@@ -13,5 +13,3 @@ const App = () => (
     </Routes>
   </>
 )
-
-export default App
