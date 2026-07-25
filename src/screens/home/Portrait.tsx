@@ -1,6 +1,6 @@
+import portrait from "#/assets/portrait.jpg"
 import React from "react"
 import styles from "./Portrait.module.css"
-import portrait from "../../assets/portrait.jpg"
 
 export const Portrait = () => (
   <img

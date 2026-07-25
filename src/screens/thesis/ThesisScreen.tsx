@@ -1,5 +1,5 @@
+import { ExternalLink } from "#/components/index.js"
 import React, { JSX } from "react"
-import { ExternalLink } from "../../components/index.js"
 
 export const ThesisScreen = (): JSX.Element => (
   <div className="components-thesis components-content">

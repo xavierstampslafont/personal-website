@@ -1,6 +1,6 @@
+import { ExternalLink } from "#/components/index.js"
 import { intervalToDuration } from "date-fns"
 import React from "react"
-import { ExternalLink } from "../../components/index.js"
 import styles from "./HomeScreen.module.css"
 import { Portrait } from "./Portrait.js"
 
