@@ -22,6 +22,7 @@
   },
   "scripts": {
     "start": "vite",
+    "tsc": "tsc --watch",
     "build": "vite build",
     "preview": "vite preview"
   },
